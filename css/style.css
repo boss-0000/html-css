@@ -1,0 +1,26 @@
+/* 
+    css all files
+*/
+/* reset */
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* root */
+:root{
+    --primery-color: hsl(0, 0%, 8%);
+    --secendry-color: hsl(0, 0%, 12%);
+    --green-color: hsl(75, 94%, 57%);
+    --primery-text-color: hsl(0, 0%, 100%);
+    --button-color: hsl(0, 0%, 20%);
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--primery-color);
+    font-size: 1.4rem;
+}

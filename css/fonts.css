@@ -1,0 +1,26 @@
+/* 
+    the files font name: inter
+        tow weight 400 , 700
+                regular , bold
+*/
+@font-face {
+    font-family: 'inter';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../assets/fonts/Inter-Regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'inter';
+    font-weight: 600;
+    font-style: normal;
+    src: url(../assets/fonts/Inter-SemiBold.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'inter';
+    font-weight: 700;
+    font-style: normal;
+    src: url(../assets/fonts/Inter-Bold.ttf) format('ttf');
+}
+body{
+    font-family: 'inter';
+}

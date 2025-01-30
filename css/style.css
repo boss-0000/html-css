@@ -32,7 +32,10 @@ h1{
 }
 h2{
     color: var(--primery-text-color);
-    font-weight: 700;
+    font-weight: 600;
+}
+h3{
+    font-weight: 400;
 }
 /* start all codes */
 .flex-center{
@@ -89,11 +92,13 @@ h2{
     padding: 10px;
     border-radius: 5px;
     box-shadow: 1px 2px 3px var(--gray-800-color);
-    font-weight: 700;
+    font-weight: 450;
+    font-size: 1.3rem;
 }
 .social-btn:hover{
     background-color: var(--green-color);
     color: var(--gray-800-color);
+    transition: all 0.4s ease;
 }
 /* responsive code Mobile */
 @media screen and (min-width: 375px) {

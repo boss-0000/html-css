@@ -5,26 +5,14 @@
 */
 @font-face {
     font-family: 'inter';
-    font-weight: 400;
-    font-style: normal;
-    src: url(../assets/fonts/Inter-Regular.ttf) format('ttf');
-}
-@font-face {
-    font-family: 'inter';
-    font-weight: 600;
-    font-style: normal;
-    src: url(../assets/fonts/Inter-SemiBold.ttf) format('ttf');
-}
-@font-face {
-    font-family: 'inter';
-    font-weight: 700;
-    font-style: normal;
-    src: url(../assets/fonts/Inter-Bold.ttf) format('ttf');
-}
+    src: url(../assets/fonts/Inter-Regular.ttf),
+      url("../assets/fonts/Inter-SemiBold.ttf") format("ttf"),
+      url("../assets/fonts/Inter-Bold.ttf") format("ttf");
+    font-weight: normal;
+  }
 body{
     font-family: 'inter';
 }
 .profile-name{
     font-family: 'inter';
-    font-weight: 600;
 }

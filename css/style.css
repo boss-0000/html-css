@@ -11,16 +11,104 @@
 }
 /* root */
 :root{
-    --primery-color: hsl(0, 0%, 8%);
-    --secendry-color: hsl(0, 0%, 12%);
+    --gray-900-color: #0E0E0E;
+    --gray-800-color: #141414;
     --green-color: hsl(75, 94%, 57%);
     --primery-text-color: hsl(0, 0%, 100%);
-    --button-color: hsl(0, 0%, 20%);
+    --gray-700-color: #1F1F1F;
 }
 html{
     font-size: 62.5%;
 }
 body{
-    background-color: var(--primery-color);
+    background-color: var(--gray-900-color);
     font-size: 1.4rem;
+    font-family: 'inter';
+}
+h1{
+    color: var(--primery-text-color);
+    font-family: 'inter';
+    font-weight: 700;
+}
+h2{
+    color: var(--primery-text-color);
+    font-weight: 700;
+}
+/* start all codes */
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-box{
+    background-color: var(--gray-800-color);
+    padding: 20px 10px;
+    width: 25em;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px var(--gray-800-color);
+}
+.profile-image a img{
+    border-radius: 100%;
+    width: 8rem;
+    border: none;
+    box-shadow: 1px 2px 3px var(--gray-800-color);
+}
+.profile-name{
+    margin: 2rem 0 1.5rem 0;
+}
+.profile-location a{
+    text-decoration: none;
+    color: var(--green-color);
+}
+.profile-about-me{
+    font-size: 1.1rem;
+    margin: 10px;
+    color: #eee;
+}
+.social-buttons{
+    width: 100%;
+}
+.list-alls{
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+}
+.social-btn{
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid var(--gray-700-color);
+    color: var(--primery-text-color);
+    background-color: #333333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px var(--gray-800-color);
+    font-weight: 700;
+}
+.social-btn:hover{
+    background-color: var(--green-color);
+    color: var(--gray-800-color);
+}
+/* responsive code Mobile */
+@media screen and (min-width: 375px) {
+    .profile{
+        width: 25em;
+        /* background-color: var(--gray-700-color); */
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+/* responsive codes Desktop*/
+@media screen and (min-width:1440px) {
+    .profile{
+        background-color: var(--gray-900-color);
+    }
 }
